@@ -2,7 +2,7 @@
 common_permissions: &permissions
   permissions:
     - level: CAN_READ
-      group_name: users
+      group_name: dsml-all
 
 # Allow users to execute models in Unity Catalog
 grants: &grants
@@ -25,4 +25,4 @@ resources:
     experiment:
       name: ${var.experiment_name}
       <<: *permissions
-      description: MLflow Experiment used to track runs for mlops_poc project.
+      # description: MLflow Experiment used to track runs for mlops_poc project.

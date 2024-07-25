@@ -1,15 +1,20 @@
 new_cluster: &new_cluster
   new_cluster:
-    num_workers: 3
-    spark_version: 13.3.x-cpu-ml-scala2.12
-    node_type_id: Standard_D3_v2
+    num_workers: 0
+    spark_version: 15.3.x-cpu-ml-scala2.12
+    node_type_id: Standard_DS3_v2
+    spark_conf:
+      spark.databricks.cluster.profile: singleNode
+      spark.master: local[*, 4]
     custom_tags:
       clusterSource: mlops-stacks_0.4
+      ResourceClass: SingleNode
+    autotermination_minutes: 15
 
 common_permissions: &permissions
   permissions:
     - level: CAN_VIEW
-      group_name: users
+      group_name: dsml-all
 
 resources:
   jobs:
@@ -51,9 +56,9 @@ resources:
               primary_keys: zip
               # git source information of current ML resource deployment. It will be persisted as part of the workflow run
               git_source_info: url:${bundle.git.origin_url}; branch:${bundle.git.branch}; commit:${bundle.git.commit}
-      schedule:
-        quartz_cron_expression: "0 0 7 * * ?" # daily at 7am
-        timezone_id: UTC
+      # schedule:
+      #   quartz_cron_expression: "0 0 7 * * ?" # daily at 7am
+      #   timezone_id: UTC
       <<: *permissions
       # If you want to turn on notifications for this job, please uncomment the below code,
       # and provide a list of emails to the on_failure argument.
