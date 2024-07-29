@@ -1,4 +1,4 @@
-# mlops_stacks
+# mlops-stacks-example
 
 This directory contains an ML project based on the default
 [Databricks MLOps Stacks](https://github.com/databricks/mlops-stacks),
@@ -21,7 +21,7 @@ This project contains the following components:
 contained in the following files:
 
 ```
-mlops_stacks        <- Root directory. Both monorepo and polyrepo are supported.
+mlops-stacks-example        <- Root directory. Both monorepo and polyrepo are supported.
 │
 │
 ├── .github                     <- Configuration folder for CI/CD using GitHub Actions. 

@@ -29,7 +29,7 @@ This project contains the following components:
 contained in the following files:
 
 ```
-mlops_stacks        <- Root directory. Both monorepo and polyrepo are supported.
+mlops-stacks-example        <- Root directory. Both monorepo and polyrepo are supported.
 │
 ├── mlops_poc       <- Contains python code, notebooks and ML resources related to one ML project. 
 │   │

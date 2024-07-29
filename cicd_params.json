@@ -1,5 +1,5 @@
 {
-  "input_root_dir": "mlops_stacks",
+  "input_root_dir": "mlops-stacks-example",
   "input_cloud": "azure",
   "input_cicd_platform": "github_actions",
   "input_default_branch": "main",
