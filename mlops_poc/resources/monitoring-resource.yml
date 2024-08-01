@@ -13,7 +13,6 @@ new_cluster: &new_cluster
     custom_tags:
       clusterSource: mlops-stacks_0.4
       ResourceClass: SingleNode
-    autotermination_minutes: 15
 
 common_permissions: &permissions
   permissions:
