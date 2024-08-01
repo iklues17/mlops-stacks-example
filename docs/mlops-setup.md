@@ -50,8 +50,8 @@ git push upstream main
 To authenticate and manage ML resources created by CI/CD, 
 [service principals](https://learn.microsoft.com/azure/databricks/administration-guide/users-groups/service-principals)
 for the project should be created and added to both staging and prod workspaces. Follow
-[Add a service principal to your Azure Databricks account](https://learn.microsoft.com/azure/databricks/administration-guide/users-groups/service-principals#--add-a-service-principal-to-your-azure-databricks-account)
-and [Add a service principal to a workspace](https://learn.microsoft.com/azure/databricks/administration-guide/users-groups/service-principals#--add-a-service-principal-to-a-workspace)
+[Add a service principal to your Azure Databricks account](https://learn.microsoft.com/ko-kr/azure/databricks/admin/users-groups/service-principals#add-service-principals-to-your-account-using-the-account-console)
+and [Add a service principal to a workspace](https://learn.microsoft.com/ko-kr/azure/databricks/admin/users-groups/service-principals#--add-a-service-principal-to-a-workspace-using-the-workspace-admin-settings)
 for details.
 
 For your convenience, we also have Terraform modules that can be used to [create](https://registry.terraform.io/modules/databricks/mlops-azure-project-with-sp-creation/databricks/latest) or [link](https://registry.terraform.io/modules/databricks/mlops-azure-project-with-sp-linking/databricks/latest) service principals.
