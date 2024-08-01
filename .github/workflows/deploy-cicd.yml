@@ -7,7 +7,7 @@ on:
       project_name:
         description: 'Project Name'
         required: true
-        default: my_mlops_project
+        default: mlops_poc
 
 env:
   DATABRICKS_HOST: https://adb-1639427395108298.18.azuredatabricks.net
