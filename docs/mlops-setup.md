@@ -84,7 +84,7 @@ i.e. for each environment
 #### Set secrets for CI/CD
 
 After creating the service principals and adding them to the respective staging and prod workspaces, refer to
-[Manage access tokens for a service principal](https://learn.microsoft.com/azure/databricks/administration-guide/users-groups/service-principals#--manage-access-tokens-for-a-service-principal)
+[Manage access tokens for a service principal](https://learn.microsoft.com/ko-kr/azure/databricks/admin/users-groups/service-principals#--manage-tokens-for-a-service-principal)
 and [Get Azure AD tokens for service principals](https://learn.microsoft.com/azure/databricks/dev-tools/api/latest/aad/service-prin-aad-token)
 to get your service principal credentials (tenant id, application id, and client secret) for both the staging and prod service principals, and [Encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 to add the following secrets to GitHub:
