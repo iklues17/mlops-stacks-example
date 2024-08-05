@@ -23,10 +23,22 @@ include:
 
 # Deployment Target specific values for workspace
 targets:
-  mlops_dev:  # UC Catalog Name
+  dsml_dev:  # UC Catalog Name
     default: true
     workspace:
-      host: https://adb-3031763609713304.4.azuredatabricks.net/
+      host: https://adb-3031763609713304.4.azuredatabricks.net
+
+  # mlops_dev:
+  #   workspace:
+  #     host: https://adb-3031763609713304.4.azuredatabricks.net
+  
+  # dsml_staging:
+  #   workspace:
+  #     host: https://adb-1639427395108298.18.azuredatabricks.net
+
+  # mlops_staging:
+  #   workspace:
+  #     host: https://adb-3090371780822546.6.azuredatabricks.net
 
   aimlops_staging:
     workspace:
