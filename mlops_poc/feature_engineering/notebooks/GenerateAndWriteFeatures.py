@@ -91,7 +91,7 @@ output_database = output_table_name.split(".")[1]
 print("output_table_name : " + output_table_name)
 print("output_database : " + output_database)
 spark.sql("SHOW CATALOGS").show()
-spark.sql("SHOW DATABASES " +  output_catalog).show()
+spark.sql("SHOW DATABASES IN " +  output_catalog).show()
 spark.sql("CREATE DATABASE IF NOT EXISTS " + output_database)
 
 # COMMAND ----------
