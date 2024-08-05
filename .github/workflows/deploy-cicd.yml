@@ -46,7 +46,7 @@ jobs:
       - name: Update databricks.yml
         id: update
         run: |
-          echo -e "  mlops_staging:\n    workspace:\n      host: https://adb-1639427395108298.18.azuredatabricks.net\n\n  mlops_prod:\n    workspace:\n      host: https://adb-3763226104187248.8.azuredatabricks.net\n\n  mlops_staging:\n    workspace:\n      host: https://adb-1639427395108298.18.azuredatabricks.net" >> "$PROJECT_NAME_ALPHA/databricks.yml"
+          echo -e "  aimlops_staging:\n    workspace:\n      host: https://adb-1639427395108298.18.azuredatabricks.net\n\n  aimlops_prod:\n    workspace:\n      host: https://adb-3763226104187248.8.azuredatabricks.net\n\n  aimlops_staging:\n    workspace:\n      host: https://adb-1639427395108298.18.azuredatabricks.net" >> "$PROJECT_NAME_ALPHA/databricks.yml"
       - name: Initialize Bundle
         id: initialize
         run: |

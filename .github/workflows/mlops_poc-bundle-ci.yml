@@ -35,7 +35,7 @@ jobs:
       - name: Validate Bundle For Staging
         id: validate          
         run: |
-          databricks bundle validate -t mlops_staging > ../validate_output.txt
+          databricks bundle validate -t aimlops_staging > ../validate_output.txt
       - name: Create Comment with Bundle Configuration
         uses: actions/github-script@v6
         id: comment
@@ -72,7 +72,7 @@ jobs:
       - name: Validate Bundle For Prod
         id: validate
         run: |
-          databricks bundle validate -t mlops_prod > ../validate_output.txt
+          databricks bundle validate -t aimlops_prod > ../validate_output.txt
       - name: Create Comment with Bundle Configuration
         uses: actions/github-script@v6
         id: comment
