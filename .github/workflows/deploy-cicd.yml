@@ -11,10 +11,6 @@ on:
 
 env:
   DATABRICKS_HOST: https://adb-1639427395108298.18.azuredatabricks.net
-  ARM_TENANT_ID: ${{ secrets.STAGING_AZURE_SP_TENANT_ID }}
-  ARM_CLIENT_ID: ${{ secrets.STAGING_AZURE_SP_APPLICATION_ID }}
-  ARM_CLIENT_SECRET: ${{ secrets.STAGING_AZURE_SP_CLIENT_SECRET }}
-  
 
 jobs:
   cicd:

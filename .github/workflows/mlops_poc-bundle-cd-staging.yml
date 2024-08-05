@@ -15,9 +15,13 @@ defaults:
     working-directory: ./mlops_poc
 
 env:
-  ARM_TENANT_ID: ${{ secrets.STAGING_AZURE_SP_TENANT_ID }}
-  ARM_CLIENT_ID: ${{ secrets.STAGING_AZURE_SP_APPLICATION_ID }}
-  ARM_CLIENT_SECRET: ${{ secrets.STAGING_AZURE_SP_CLIENT_SECRET }}
+  ## Microsoft Entra ID SP authentication
+  # ARM_TENANT_ID: ${{ env.STAGING_ARM_TENANT_ID }}
+  # ARM_CLIENT_ID: ${{ env.STAGING_ARM_CLIENT_ID }}
+  # ARM_CLIENT_SECRET: ${{ env.STAGING_ARM_CLIENT_SECRET }}
+  ## OAuth machine-to-machine (M2M) authentication
+  DATABRICKS_CLIENT_ID: ${{ secrets.DB_SP_CLIENT_ID}}
+  DATABRICKS_CLIENT_SECRET: ${{ secrets.DB_SP_CLIENT_SECRET}}
   
 
 jobs:
