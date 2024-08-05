@@ -82,7 +82,7 @@ assert input_table_path != "", "input_table_path notebook parameter must be spec
 assert output_table_name != "", "output_table_name notebook parameter must be specified"
 
 # Extract database name. Needs to be updated for Unity Catalog.
-output_database = output_table_name.split(".")[0]
+output_database = output_table_name.split(".")[1]
 
 # COMMAND ----------
 
