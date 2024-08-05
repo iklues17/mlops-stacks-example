@@ -87,6 +87,10 @@ output_database = output_table_name.split(".")[0]
 # COMMAND ----------
 
 # DBTITLE 1,Create database.
+print("output_table_name : " + output_table_name)
+print("output_database : " + output_database)
+spark.sql("SHOW CATALOGS")
+spark.sql("SHOW DATABASES")
 spark.sql("CREATE DATABASE IF NOT EXISTS " + output_database)
 
 # COMMAND ----------
