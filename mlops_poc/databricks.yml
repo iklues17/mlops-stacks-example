@@ -28,10 +28,10 @@ targets:
     workspace:
       host: https://adb-3031763609713304.4.azuredatabricks.net/
 
-  mlops_staging:
+  aimlops_staging:
     workspace:
       host: https://adb-3090371780822546.6.azuredatabricks.net
 
-  mlops_prod:
+  aimlops_prod:
     workspace:
       host: https://adb-3763226104187248.8.azuredatabricks.net
