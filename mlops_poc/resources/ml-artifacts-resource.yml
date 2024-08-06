@@ -9,7 +9,7 @@ grants: &grants
   grants:
     - privileges:
         - EXECUTE
-      principal: dsml-mlops
+      principal: dsml-manager
 
 # Defines model and experiments
 resources:

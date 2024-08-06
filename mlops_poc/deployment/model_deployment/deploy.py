@@ -7,7 +7,7 @@ from mlflow.tracking import MlflowClient
 
 
 def deploy(model_uri, env):
-    """Deploys an already-registered model in Unity catalog by assigning it the appropriate alias for model deployment.
+    """Deploys an already-registered model in Unity catalog by assigning it the appropriate alias for model deployment. test
 
     :param model_uri: URI of the model to deploy. Must be in the format "models:/<name>/<version-id>", as described in
                       https://www.mlflow.org/docs/latest/model-registry.html#fetching-an-mlflow-model-from-the-model-registry
